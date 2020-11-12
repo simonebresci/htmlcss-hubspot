@@ -2,5 +2,59 @@
   box-sizing: border-box;
   margin:0;
   padding:0;
-  background-color: orange;
 }
+
+
+/* UTILITIES & COMMON SETTINGS */
+
+
+/* /UTILITIES & COMMON SETTINGS */
+
+/* Div generico che imposta larghezza content */
+.content{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* /Div generico che imposta larghezza content */
+
+.bar-fixed{
+  border-bottom: 1px solid red;
+  height: 50px;
+  background-color: #f4f9fd;
+}
+
+.header-top{
+  background-color: #ffffff;
+  height: 100px;
+}
+
+.header-center{
+  background-color: #fff3ef;
+  background-image: url(../img/header-sfondo.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.header-bottom{
+  background-color: #afebe4;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+}
+
+/* Header - parte superiore */
+.header-top{
+    height: 100px;
+}
+/* /Header - parte superiore */
+
+/* Header - parte centrale */
+.header-center{
+  height: 600px;
+}
+/* /Header - parte centrale */
+
+/* Header - parte inferiore */
+.header-bottom{
+  height: 100px;
+}
+/* /Header - parte inferiore */
