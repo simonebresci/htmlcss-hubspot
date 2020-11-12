@@ -1,3 +1,6 @@
+/* Todo:
+1)Inserire clearfix dove hai usato classi float!*/
+
 *{
   box-sizing: border-box;
   margin:0;
@@ -6,7 +9,13 @@
 
 
 /* UTILITIES & COMMON SETTINGS */
+.float-l{
+  float:left;
+}
 
+.float-r{
+  float:right;
+}
 
 /* /UTILITIES & COMMON SETTINGS */
 
@@ -23,38 +32,66 @@
   background-color: #f4f9fd;
 }
 
+.bar-fixed-colonnasx{
+  width: 200px;
+  height: 50px;
+  border: 1px solid orange;
+}
+
+.bar-fixed-colonnadx{
+  width: 200px;
+  height: 50px;
+  border: 1px solid orange;
+}
+
+.header-top-colonnasx{
+  width: 200px;
+  height: 50px;
+  border: 1px solid orange;
+}
+
+.header-top-colonnadx{
+  width: 200px;
+  height: 50px;
+  border: 1px solid orange;
+}
+
 .header-top{
   background-color: #ffffff;
-  height: 100px;
+  height: 50px;
 }
 
 .header-center{
+  height: 600px;
   background-color: #fff3ef;
   background-image: url(../img/header-sfondo.png);
   background-position: bottom right;
   background-repeat: no-repeat;
 }
 
+.header-center-jumbotron{
+  padding-top: 40px;
+  width: 50%;
+  height: 300px;
+  border: 1px solid red;
+}
+
 .header-bottom{
-  background-color: #afebe4;
-  border-top: 1px solid red;
-  border-bottom: 1px solid red;
-}
-
-/* Header - parte superiore */
-.header-top{
-    height: 100px;
-}
-/* /Header - parte superiore */
-
-/* Header - parte centrale */
-.header-center{
-  height: 600px;
-}
-/* /Header - parte centrale */
-
-/* Header - parte inferiore */
-.header-bottom{
+  /* Workaround per tagliare immagine */
+  position: relative;
+  /* z-index: -1; */
+  top:-83px;
   height: 100px;
+  /* /Workaround per tagliare immagine */
+
+  background-color: #afebe4;
+  border-top: 4px solid #33475b;
+  border-bottom: 4px solid #33475b;
+
+
 }
+
+
+
+
 /* /Header - parte inferiore */
