@@ -114,19 +114,30 @@
 
 .header-top-colonnasx{
   width: 200px;
-  height: 50px;
-  border: 1px solid orange;
+  height: 75px;
+}
+
+.header-top-colonnasx img{
+  /* Centrare immagine in verticale */
+  border: 1px solid violet;
 }
 
 .header-top-colonnadx{
-  width: 200px;
-  height: 50px;
-  border: 1px solid orange;
+  width: 500px;
+  height: 75px;
+  line-height: 75px;
 }
+
+.header-top-colonnadx ul li:after{
+  content:" v";
+  border: 1px solid violet;
+  /* content:"<i class="fa fa-globe" aria-hidden="true"></i> English <i class="fa fa-angle-down" aria-hidden="true">" */
+}
+
 
 .header-top{
   background-color: #ffffff;
-  height: 50px;
+  height: 75px;
 }
 
 .header-center{
