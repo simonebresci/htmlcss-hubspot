@@ -23,35 +23,54 @@
   clear:both;
 }
 
-.resetLista ul{
+/* Allinea testo a destra */
+.txt-right{
+  text-align: right;
+}
+
+
+.reset-lista ul{
   list-style: none;
 }
 
-.resetLista ul li{
+.reset-lista ul li{
+  text-decoration: none;
+  display: inline;
+  padding-right: 15px;
+}
+
+.reset-lista ul li a{
   text-decoration: none;
 }
 
-.buttonLink{
-
+.button-link{
+  border-radius: 5px;
+  padding: 5px;
 }
 
-.buttonLink-transparent{
-
+.border-main-color{
+  border: 1px solid violet;
+  background-color: white;
 }
 
-.buttonLink-filled{
-  
+.filled-main-color{
+  border: 1px solid violet;
+  background-color: violet;
+  border-color: violet;
 }
+
 /* /UTILITIES & COMMON SETTINGS */
 
 /* Div generico che imposta larghezza content */
 .content{
+  min-width: 1200px;  /* Resixe guardare poi */
   max-width: 1200px;
   margin: 0 auto;
 }
 /* /Div generico che imposta larghezza content */
 
 .bar-fixed{
+  width: 100%;
   border-bottom: 1px solid #556979;
   height: 50px;
   background-color: #f4f9fd;
@@ -64,7 +83,7 @@
 }
 
 .bar-fixed-colonnadx{
-  width: 200px;
+  width: 500px;
   height: 50px;
   border: 1px solid orange;
 }
