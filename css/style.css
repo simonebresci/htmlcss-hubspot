@@ -5,6 +5,9 @@
   box-sizing: border-box;
   margin:0;
   padding:0;
+
+  /* Font standard */
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -78,7 +81,7 @@
 }
 
 .bar-fixed-colonnasx{
-  width: 200px;
+  width: 300px;
   height: 50px;
   border: 1px solid orange;
 }
@@ -87,6 +90,11 @@
   width: 500px;
   height: 50px;
   border: 1px solid orange;
+}
+
+/* Bordo separatore elementi prima navbar */
+.bar-fixed-colonnasx ul li:first-child{
+  border-right: 1px solid violet;
 }
 
 /* Elimina padding sull'ultimo elemento */
