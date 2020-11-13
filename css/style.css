@@ -147,6 +147,7 @@
   /* Centrare immagine in verticale */
   line-height: 75px;
   border: 1px solid violet;
+
 }
 
 .header-top-colonnadx{
@@ -156,9 +157,9 @@
 }
 
 .header-top-colonnadx ul li:after{
-  content:" v ";
-  border: 1px solid violet;
-  /* content:"<i class=\"fa fa-globe\" aria-hidden=\"true\"></i>" */
+  /* content:" v "; */
+  /* border: 1px solid violet; */
+  content:"<i class=\"fa fa-globe\" aria-hidden=\"true\"></i>"
 }
 
 
