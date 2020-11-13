@@ -43,7 +43,7 @@
   text-decoration: none;
 }
 
-.button-link{
+.button-link{s
   border-radius: 5px;
   padding: 5px;
 }
@@ -58,6 +58,7 @@
   background-color: violet;
   border-color: violet;
 }
+
 
 /* /UTILITIES & COMMON SETTINGS */
 
@@ -87,6 +88,12 @@
   height: 50px;
   border: 1px solid orange;
 }
+
+/* Elimina padding sull'ultimo elemento */
+.bar-fixed-colonnadx ul li:last-child{
+  padding:0;
+}
+
 
 .header-top-colonnasx{
   width: 200px;
