@@ -17,6 +17,31 @@
   float:right;
 }
 
+.clearfix{
+  content:"";
+  display:table;
+  clear:both;
+}
+
+.resetLista ul{
+  list-style: none;
+}
+
+.resetLista ul li{
+  text-decoration: none;
+}
+
+.buttonLink{
+
+}
+
+.buttonLink-transparent{
+
+}
+
+.buttonLink-filled{
+  
+}
 /* /UTILITIES & COMMON SETTINGS */
 
 /* Div generico che imposta larghezza content */
@@ -27,7 +52,7 @@
 /* /Div generico che imposta larghezza content */
 
 .bar-fixed{
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #556979;
   height: 50px;
   background-color: #f4f9fd;
 }
