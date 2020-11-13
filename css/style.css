@@ -50,8 +50,22 @@
   background-color: rgba(0,0,0,0.1);
 }
 
+.reset-lista ul li a:visited{
+  color:#3d5364;
+}
+
+
+.reset-lista ul li a:visited{
+  color:#3d5364;
+}
+
+
+
+
 
 .button-link{
+  text-decoration: none;
+  font-weight: bold;
   border-radius: 5px;
   padding: 10px;
 }
@@ -65,9 +79,14 @@
 .filled-main-color{
   border: 1px solid #fe775a;
   background-color: #fe775a;
-  color:white;
+  color: white;
   border-color: white;
 }
+
+.button-big{
+  padding: 20px;
+}
+
 
 
 /* /UTILITIES & COMMON SETTINGS */
@@ -93,6 +112,8 @@
   width: 300px;
   height: 75px;
   line-height: 75px;
+  color:#3d5364;
+
 }
 
 .bar-fixed-colonnadx{
@@ -103,7 +124,11 @@
 
 /* Bordo separatore elementi prima navbar */
 .bar-fixed-colonnasx ul li:first-child{
-  border-right: 1px solid violet;
+  border-right: 2px solid #899397;
+}
+
+.bar-fixed-colonnasx ul li:nth-child(2){
+  padding-left: 15px;
 }
 
 /* Elimina padding sull'ultimo elemento */
@@ -138,28 +163,39 @@
 .header-top{
   background-color: #ffffff;
   height: 75px;
+  font-weight: bold;
 }
 
 .header-center{
-  height: 600px;
+  height: 700px;
   background-color: #fff3ef;
   background-image: url(../img/header-sfondo.png);
-  background-position: bottom right;
+  background-position: top right;
   background-repeat: no-repeat;
 }
 
 .header-center-jumbotron{
-  padding-top: 40px;
+  padding-top: 60px;
   width: 50%;
-  height: 300px;
-  border: 1px solid red;
 }
+
+.jumbo-text{
+  font-size: 50px;
+  font-weight: bold;
+  color:black;
+}
+
+.header-center-jumbotron p {
+  margin: 50px 0;
+}
+
+
 
 .header-bottom{
   /* Workaround per tagliare immagine */
   position: relative;
   /* z-index: -1; */
-  top:-83px;
+  bottom:88px;
   height: 100px;
   /* /Workaround per tagliare immagine */
 
