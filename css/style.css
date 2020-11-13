@@ -46,20 +46,27 @@
   text-decoration: none;
 }
 
-.button-link{s
+.reset-lista ul li a:hover{
+  background-color: rgba(0,0,0,0.1);
+}
+
+
+.button-link{
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
 }
 
 .border-main-color{
-  border: 1px solid violet;
+  border: 1px solid #fe775a;
+  color: #fe775a;
   background-color: white;
 }
 
 .filled-main-color{
-  border: 1px solid violet;
-  background-color: violet;
-  border-color: violet;
+  border: 1px solid #fe775a;
+  background-color: #fe775a;
+  color:white;
+  border-color: white;
 }
 
 
@@ -76,20 +83,22 @@
 .bar-fixed{
   width: 100%;
   border-bottom: 1px solid #556979;
-  height: 50px;
+  height: 75px;
   background-color: #f4f9fd;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .bar-fixed-colonnasx{
   width: 300px;
-  height: 50px;
-  border: 1px solid orange;
+  height: 75px;
+  line-height: 75px;
 }
 
 .bar-fixed-colonnadx{
   width: 500px;
-  height: 50px;
-  border: 1px solid orange;
+  height: 75px;
+  line-height: 75px;
 }
 
 /* Bordo separatore elementi prima navbar */
