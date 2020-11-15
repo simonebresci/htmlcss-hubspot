@@ -15,25 +15,24 @@
 .float-l{
   float:left;
 }
-
 .float-r{
   float:right;
 }
-
 .colonna-25{
   width: 25%;
 }
-
 .w25{
   width: 25%;
 }
-
 .w50{
   width: 50%;
 }
-
 .w100{
   width: 100%;
+}
+
+.h100{
+  height: 100%;
 }
 
 .clearfix{
@@ -41,7 +40,6 @@
   display:table;
   clear:both;
 }
-
 /* Allinea testo a destra */
 .txt-right{
   text-align: right;
@@ -58,28 +56,40 @@
 }
 
 /* Reset lista per link scuri */
-.reset-lista ul{
+.reset-lista-dark ul, .reset-lista-white ul{
   list-style: none;
 }
 
-.reset-lista ul li{
+.reset-lista-dark ul li, .reset-lista-white ul li{
   text-decoration: none;
   display: inline;
   padding-right: 15px;
 }
 
-.reset-lista ul li a{
+.reset-lista-dark ul li a{
   text-decoration: none;
-  color:#3d5364;
+  color:#3d5364; /* grigino scuro*/
 }
 
-.reset-lista ul li a:hover{
+.reset-lista-white ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.reset-lista-dark ul li a:hover, .reset-lista-white ul li a:hover{
   background-color: rgba(0,0,0,0.1);
 }
 
-.reset-lista ul li a:visited{
-  color:#3d5364;
+.reset-lista-dark ul li a:visited{
+  color:#3d5364; /* grigino scuro*/
 }
+
+
+.reset-lista-white ul li a:visited{
+  color:white;
+}
+
+
 /* /Reset link per link scuri */
 
 
@@ -171,15 +181,10 @@
 .header-top-colonnasx{
   width: 200px;
   height: 75px;
+  padding: 20px 0;
 }
 
 
-.header-top-colonnasx img{
-  /* Centrare immagine in verticale */
-  line-height: 75px;
-  border: 1px solid violet;
-
-}
 
 .header-top-colonnadx{
   width: 600px;
