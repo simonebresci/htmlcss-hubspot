@@ -443,12 +443,31 @@
   background-color: white;
 }
 
+.clienti-box{
+  width: 100%;
+  padding: 50px 0;
+}
+
+/* Seleziona colonna di sinistra */
+.clienti-box .colonna:first-child{
+  width: 40%;
+  background-color: green;
+}
+
+/* Seleziona colonna di destra */
+.clienti-box .colonna:nth-child(2){
+  width: 60%;
+  background-color: pink;
+}
+
 .clienti-brand{
   width: 800px;
+
 }
 
 .clienti-brand .cella-cliente img{
-  width: 100px;
+  max-height: 50px;
+  max-width: 100px;
 }
 
 .cella-cliente{
