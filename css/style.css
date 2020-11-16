@@ -361,13 +361,24 @@
 
 .background2{
   width:100%;
-  background-color: #00baa8;
+  /* Sfondo con gradient */
+  background: linear-gradient(45deg,#00a4bd,#00bda5);
+
   height:400px;
 }
 
 .main-statistics{
   color:white;
+  text-align: center;
 }
+
+.main-statistics h2:first-child{
+  padding-top:20px;
+}
+
+/* .main-statistics p:first-child{
+  margin-bottom:50px;
+} */
 
 .riquadri{
   width: 100%;
@@ -382,6 +393,7 @@
   text-align: center;
 }
 
+/* Rendere più semplice - inserire bordi anzichè creare eccezioni per toglierle. */
 .main-statistics .riquadri .rettangolo:first-child{
   border-top:0px;
   border-left:0px;
@@ -414,14 +426,32 @@
   display:block;
   font-size: 36px;
 }
+/* /Rendere più semplice */
 
 .count:after{
-  content:"+";
+  content:" +";
+  font-size: 0.5em;
 }
 
 .background3{
   background-color: white;
 }
+
+.clienti-brand{
+  width: 800px;
+}
+
+.clienti-brand .cella-cliente img{
+  width: 100px;
+}
+
+.cella-cliente{
+  width: 25%;
+  height: 50px;
+  text-align: center;
+  border: 1px solid violet;
+}
+
 
 .background4{
   background-color: #32495b;
@@ -461,3 +491,27 @@
 .footer-credits span{
   border: 1px solid violet;
 }
+
+/* Note */
+
+/* Codice per far apparire barra grigia dopo POPOLAR FEATURE */
+/* .info-features {
+    width: 100%;
+    font-size: 18px; */
+    /* line-height per centrare in altezza */
+    /* line-height: 20px; */
+/* } */
+/* .info-features:before {
+    content: '';
+    display: block;
+    float: right;
+    width: 65%;
+    height: 2px; */
+    /* line-height 20px - 2px = 18px */
+    /* margin-top: 9px;
+    background-color: #899397;
+} */
+
+/* trattino lungo = long dash */
+/* trattino lungo = &mdash;
+ */
