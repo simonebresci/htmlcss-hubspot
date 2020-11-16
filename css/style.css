@@ -109,14 +109,8 @@
   margin-bottom: 20px;
 }
 
-.content h3 hr{
-  width: 100%;
-  display: inline-block;
-  border: 1px solid violet;
-}
-
 .content p{
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .icona-orange{
@@ -300,11 +294,19 @@
   margin-bottom: 40px;
 }
 
+.main-free-crm .bordo-custom{
+  position: relative;
+  bottom: 5px;
+  height: 1px;
+  margin-left: 50px;
+  width: 72%;
+  display: inline-block;
+  border-bottom: 2px solid #899397;
+}
+
 .main-free-crm-cl1{
   width: 25%;
   text-align:center;
-  border: 1px solid violet;
-
 }
 
 .main-free-crm-cl1 > img{
@@ -363,8 +365,6 @@
   width:100%;
   /* Sfondo con gradient */
   background: linear-gradient(45deg,#00a4bd,#00bda5);
-
-  height:400px;
 }
 
 .main-statistics{
@@ -382,15 +382,21 @@
 
 .riquadri{
   width: 100%;
+  padding: 50px 0;
 }
 
 .main-statistics .riquadri .rettangolo{
   width: 25%;
-  height: 100px;
+  height: 150px;
+  padding: 15px;
   display: inline-block;
   border: 1px solid white;
   border-top:0px;
   text-align: center;
+}
+
+.main-statistics .riquadri .rettangolo img{
+  height: 40px;
 }
 
 /* Rendere più semplice - inserire bordi anzichè creare eccezioni per toglierle. */
