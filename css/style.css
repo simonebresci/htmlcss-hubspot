@@ -489,28 +489,44 @@
 /* Seleziona colonna di destra */
 .clienti-box .colonna:nth-child(2){
   /* width: 60%; */
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 
 
 
 .clienti-brand{
-  width: 800px;
+  width: 100%;
+  align-content: center;
 
 }
 
 .clienti-brand .cella-cliente img{
   max-height: 50px;
-  max-width: 80%;
+  max-width: 100%;
+
 }
 
 .cella-cliente{
   width: 25%;
   height: 50px;
+  margin: 10px 0;
   text-align: center;
-  border: 1px solid violet;
+  /* border: 1px solid violet; */
+  line-height: 50px;
 }
+
+/* Centrature manuali */
+.clienti-box .cella-cliente:nth-child(6){
+  position: relative;
+  top: 5px;
+}
+
+.clienti-box .cella-cliente:nth-child(8){
+  position: relative;
+  top: 4px;
+}
+/* /Centrature manuali */
 
 .background3 .content p{
   margin: 40px 0;
