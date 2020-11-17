@@ -5,7 +5,6 @@
   box-sizing: border-box;
   margin:0;
   padding:0;
-
   /* Font standard */
   font-family: 'Montserrat', sans-serif;
 }
@@ -204,6 +203,12 @@
 }
 /* /Div generico che imposta larghezza content */
 
+/* Imposta larghezza minima di tutti i background */
+.bar-fixed, .header-top, .header-center, .header-bottom, .background1, .background2, .background3, .background4{
+  min-width: 1200px;
+}
+/* /Imposta larghezza minima di tutti i background */
+
 .bar-fixed{
   width: 100%;
   border-bottom: 1px solid #556979;
@@ -308,6 +313,7 @@
   background-color: #f4f9fd;
   padding-top: 20px;
   padding-bottom: 40px;
+
 }
 
 /* /Header - parte inferiore */
