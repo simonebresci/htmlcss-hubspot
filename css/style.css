@@ -376,11 +376,15 @@
   width: 75%;
 }
 
+.main-free-crm-cl2 h3{
+  display: inline-block;
+}
+
 /* Riga con 3 colonne flottanti */
 .main-flottanti{
   width: 100%;
   height: 300px;
-  background-color: none;
+  /* background-color: none; */
   /* margin-bottom: 40px; */
 }
 
