@@ -92,7 +92,7 @@
   display:inline-block;
 }
 
-/* RESET LISTA PER LINK CHIARI E SCURI */
+/* RESET LISTA PER LINK CHIARI E SCURI - Da sintetizzare con reset-lista generico! */
 .reset-lista-dark ul, .reset-lista-white ul{
   list-style: none;
 }
@@ -119,6 +119,27 @@
   color:white;
 }
 /* /RESET LISTA PER LINK CHIARI E SCURI */
+
+/* RESET LISTA GENERICO SENZA COLORE*/
+.reset-lista ul{
+  list-style: none;
+}
+.reset-lista ul li{
+  text-decoration: none;
+  display: inline;
+  padding-right: 15px;
+}
+.reset-lista ul li a{
+  text-decoration: none;
+}
+
+.reset-lista ul li a:hover{
+  background-color: rgba(0,0,0,0.1);
+}
+
+/* ****RESET LISTA GENERICO SENZA COLORE */
+
+
 
 .content h1{
   font-size: 24px;
@@ -165,6 +186,7 @@
   color: #fe775a;
   background-color: white;
 }
+
 /* Bottone bianco con testo nero */
 .border-white{
   border: 1px solid white;
