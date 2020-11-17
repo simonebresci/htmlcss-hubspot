@@ -1,6 +1,4 @@
-/* Todo:
-1)Inserire clearfix dove hai usato classi float!*/
-
+/* PROPRIETA' GENERALI */
 *{
   box-sizing: border-box;
   margin:0;
@@ -8,73 +6,76 @@
   /* Font standard */
   font-family: 'Montserrat', sans-serif;
 }
+/* PROPRIETA' GENERALI */
+/* ******** UTILITIES & COMMON SETTINGS ******** */
 
-
-/* UTILITIES & COMMON SETTINGS */
+/* float elemento a sinistra */
 .float-l{
   float:left;
 }
+/* float elemento a destra*/
 .float-r{
   float:right;
 }
-
-
-/* .centerY{
-  position: absolute;
-  transform: translate(-50%,-50%);
-  top:50%;
-  left:50%;
-} */
-
+/* Colonna generica con larghezza 25% */
 .colonna-25{
   width: 25%;
 }
 
-/* Margine 10 pixel extra */
+/* Margine 10 pixel extra - da usare solo in casi estremi*/
 .margin-h10{
   height: 10px;
 }
 
+/* Imposta font a 12px */
 .font-12{
   font-size:12px;
 }
+
+/* Imposta larghezza al 25% */
 .w25{
   width: 25%;
 }
-
+/* Imposta larghezza al 40% */
 .w40{
   width: 40%;
 }
-
+/* Imposta larghezza al 50% */
 .w50{
   width: 50%;
 }
-
+/* Imposta larghezza al 60% */
 .w60{
   width: 60%;
 }
+/* Imposta larghezza al 100% */
 .w100{
   width: 100%;
 }
 
+/* Imposta altezza al 100% */
 .h100{
   height: 100%;
 }
 
+/* Clearfix per colonne flottanti*/
 .clearfix{
   content:"";
   display:table;
   clear:both;
 }
+
 /* Allinea testo a destra */
 .txt-right{
   text-align: right;
 }
 
+/* Grassetto su testo */
 .bold{
   font-weight: bold;
 }
 
+/* Evidenzia un testo */
 .evidenzia{
   font-size: 36px;
   font-weight: bold;
@@ -91,83 +92,87 @@
   display:inline-block;
 }
 
-/* Reset lista per link scuri */
+/* RESET LISTA PER LINK CHIARI E SCURI */
 .reset-lista-dark ul, .reset-lista-white ul{
   list-style: none;
 }
-
 .reset-lista-dark ul li, .reset-lista-white ul li{
   text-decoration: none;
   display: inline;
   padding-right: 15px;
 }
-
 .reset-lista-dark ul li a{
   text-decoration: none;
   color:#3d5364; /* grigino scuro*/
 }
-
 .reset-lista-white ul li a{
   text-decoration: none;
   color: white;
 }
-
 .reset-lista-dark ul li a:hover, .reset-lista-white ul li a:hover{
   background-color: rgba(0,0,0,0.1);
 }
-
 .reset-lista-dark ul li a:visited{
   color:#3d5364; /* grigino scuro*/
 }
-
-
 .reset-lista-white ul li a:visited{
   color:white;
 }
+/* /RESET LISTA PER LINK CHIARI E SCURI */
+
+.content h1{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 
 
+/* h2 - proprietà generiche */
 .content h2{
   font-size: 20px;
   margin-bottom: 20px;
 }
 
+/* h3 - proprietà generiche */
 .content h3{
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
+/* p - proprietà generiche */
 .content p{
   line-height: 30px;
   margin-bottom: 20px;
 }
 
+/* icone - colora di arancio*/
 .icona-orange{
   color:#fe775a; /*Arancio*/
   margin-right: 10px;
 }
-/* /Reset link per link scuri */
 
-
+/* Bottone link - nessun colore*/
 .button-link{
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
   padding: 10px;
 }
-
+/* Colora testo e bordo con colore principale - sfondo bianco */
 .border-main-color{
   border: 1px solid #fe775a;
   color: #fe775a;
   background-color: white;
 }
-
+/* Bottone bianco con testo nero */
 .border-white{
   border: 1px solid white;
   color: black;
   background-color: white;
 }
 
+/* Bottone con sfondo di colore principale e testo bianco*/
 .filled-main-color{
   border: 1px solid #fe775a;
   background-color: #fe775a;
@@ -176,15 +181,17 @@
   font-weight: normal;
 }
 
+/* Rendi bottone grande */
 .button-big{
   padding: 20px;
 }
 
+/* Maiuscole ad inizio lista */
 .capitalize ul li{
   text-transform: capitalize;
 }
 
-/* Box con grafica */
+/* Box con grafica - ombre e bordi arrotondati */
 .box-style1{
   /* border: 1px solid violet; */
   box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
@@ -192,12 +199,11 @@
   border-radius: 5px;
 }
 
-
-/* /UTILITIES & COMMON SETTINGS */
+/* /******** UTILITIES & COMMON SETTINGS ******** */
 
 /* Div generico che imposta larghezza content */
 .content{
-  min-width: 1200px;  /* Resixe guardare poi */
+  min-width: 1200px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -207,8 +213,8 @@
 .bar-fixed, .header-top, .header-center, .header-bottom, .background1, .background2, .background3, .background4{
   min-width: 1200px;
 }
-/* /Imposta larghezza minima di tutti i background */
 
+/* Barra fissa in cima alla pagina (da implementare funzionalità) */
 .bar-fixed{
   width: 100%;
   border-bottom: 1px solid #556979;
@@ -218,6 +224,7 @@
   font-weight: bold;
 }
 
+/* Colonna sinistra di bar-fixed */
 .bar-fixed-colonnasx{
   width: 300px;
   height: 75px;
@@ -225,48 +232,57 @@
   color:#3d5364;
 
 }
-
+/* Colonna destra di bar-fixed */
 .bar-fixed-colonnadx{
   width: 500px;
   height: 75px;
   line-height: 75px;
 }
 
-/* Bordo separatore elementi prima navbar */
+/* PERSONALIZZAZIONE LISTA BAR-FIXED COLONNA SX */
+
+/* Bordo separatore elementi */
 .bar-fixed-colonnasx ul li:first-child{
   border-right: 2px solid #899397; /*grigio*/
 }
 
+/* Padding secondo elemento  */
 .bar-fixed-colonnasx ul li:nth-child(2){
   padding-left: 15px;
 }
+/* /PERSONALIZZAZIONE LISTA BAR-FIXED COLONNA SX */
+
+
+/* PERSONALIZZAZIONE LISTA BAR-FIXED COLONNA DX */
 
 /* Elimina padding sull'ultimo elemento */
 .bar-fixed-colonnadx ul li:last-child{
   padding:0;
 }
+/* /PERSONALIZZAZIONE LISTA BAR-FIXED COLONNA DX */
 
-
+/* Header-top colonna a sx */
 .header-top-colonnasx{
   width: 200px;
   height: 75px;
   padding: 20px 0;
 }
 
-
-
+/* Header-top colonna a dx */
 .header-top-colonnadx{
   width: 600px;
   height: 75px;
   line-height: 75px;
 }
 
+/* Header-top - proprietà barra */
 .header-top{
   background-color: #ffffff;
   height: 75px;
   font-weight: bold;
 }
 
+/* Header center - parte centrale dell'header */
 .header-center{
   position: relative;
   height: 700px;
@@ -277,24 +293,27 @@
 
 }
 
+/* Header-center jumbotron */
 .header-center-jumbotron{
   position: relative;
   padding-top: 60px;
   width: 50%;
 }
 
+/* jumbotron - personalizzazione testo */
 .jumbo-text{
   font-size: 50px;
   font-weight: bold;
   color:black;
 }
 
+/* Header-center - margine su elementi paragrafo*/
 .header-center-jumbotron p {
   margin: 50px 0;
 }
 
 
-
+/* Header bottom - barra inferiore di colore verde */
 .header-bottom{
   position: absolute;
   width: 100%;
@@ -308,7 +327,7 @@
   border-bottom: 4px solid #33475b;
 }
 
-
+/* background1 - sfondo di colore grigio chiaro */
 .background1{
   background-color: #f4f9fd;
   padding-top: 20px;
@@ -316,8 +335,7 @@
 
 }
 
-/* /Header - parte inferiore */
-
+/*main-cubo Riga con cubo colorato */
 .main-cubo{
   width: 70%;
   margin: 50px auto;
@@ -325,12 +343,7 @@
   text-align: center;
 }
 
-.content h1{
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
+/* Riga con immagine libretto */
 .main-free-crm{
   width: 100%;
   /* height: 300px; */
@@ -338,6 +351,7 @@
   margin-bottom: 50px;
 }
 
+/* Riga grigia accanto POPOLAR FEATURE */
 .main-free-crm .bordo-custom{
   position: relative;
   bottom: 5px;
@@ -347,20 +361,22 @@
   display: inline-block;
   border-bottom: 2px solid #899397;
 }
-
+/* Riga libretto - colonna1 */
 .main-free-crm-cl1{
   width: 25%;
   text-align:center;
 }
-
+/* Riga libretto - colonna1 - immagini */
 .main-free-crm-cl1 > img{
   margin-bottom: 20px;
 }
 
+/* Riga libretto - colonna2 */
 .main-free-crm-cl2{
   width: 75%;
 }
 
+/* Riga con 3 colonne flottanti */
 .main-flottanti{
   width: 100%;
   height: 300px;
@@ -374,10 +390,12 @@
   padding: 0 30px;
 }
 
+/* prima colonna - no padding*/
 .main-flottanti > div:first-child{
   padding-left: 0px;
 }
 
+/* ultima colonna - no padding */
 .main-flottanti > div:last-child{
   padding-right: 0px;
 }
@@ -392,7 +410,9 @@
   padding: 30px 25px;
   padding-bottom: 40px;
 }
+/* /Classe generica per contenuto colonna flottante */
 
+/* PERSONALIZZAZIONE GENERICA CL-CONTENUTO */
 .cl-contenuto h2{
   margin-top:20px;
 }
@@ -409,8 +429,9 @@
   text-align: left;
   margin-bottom:70px;
 }
+/* /PERSONALIZZAZIONE GENERICA CL-CONTENUTO */
 
-
+/* Riga con sfondo celeste gradient */
 .background2{
   width:100%;
   /* Sfondo con gradient */
@@ -419,24 +440,23 @@
   padding-bottom: 50px;
 }
 
+/* Riga con statistiche sito */
 .main-statistics{
   color:white;
   text-align: center;
 }
-
+/* Padding per primo h2 sezione */
 .main-statistics h2:first-child{
   padding-top:20px;
 }
 
-/* .main-statistics p:first-child{
-  margin-bottom:50px;
-} */
-
+/* Insieme dei rettangoli */
 .riquadri{
   width: 100%;
   padding: 50px 0;
 }
 
+/* Personalizzazione rettangolo singolo */
 .main-statistics .riquadri .rettangolo{
   width: 25%;
   height: 150px;
@@ -447,104 +467,96 @@
   text-align: center;
 }
 
+/* Setta altezza delle immagini */
 .main-statistics .riquadri .rettangolo img{
   height: 40px;
 }
 
+/* CREAZIONE GRIGLIA CON BORDI BIANCHI */
 /* Rendere più semplice - inserire bordi anzichè creare eccezioni per toglierle. */
 .main-statistics .riquadri .rettangolo:first-child{
   border-top:0px;
   border-left:0px;
 }
-
 .main-statistics .riquadri .rettangolo:nth-child(6){
   border-bottom:0px;
 }
 .main-statistics .riquadri .rettangolo:nth-child(7){
   border-bottom:0px;
 }
-
-
 .main-statistics .riquadri .rettangolo:nth-child(4){
   border-top:0px;
   border-right:0px;
 }
-
 .main-statistics .riquadri .rettangolo:nth-child(5){
   border-left:0px;
   border-bottom:0px;
 }
-
 .main-statistics .riquadri .rettangolo:last-child{
   border-right:0px;
   border-bottom:0px;
 }
-
 .main-statistics .riquadri .rettangolo span{
   font-size: 14px;
   margin: 5px 0;
 }
-
 .main-statistics .riquadri .rettangolo .count{
   display:block;
   font-size: 36px;
 }
 /* /Rendere più semplice */
+/* /CREAZIONE GRIGLIA CON BORDI BIANCHI */
 
+/* Plus dopo ogni numero */
 .count:after{
   /* Centratura manuale */
   position: relative;
   bottom: 4px;
   /* /Centratura manuale */
-
   content:" +";
   font-size: 0.7em;
   font-weight: bold;
 }
 
+/* Riga con sfondo bianco */
 .background3{
   background-color: white;
 }
+/* Riga con sfondo bianco, paragafo */
+.background3 .content p{
+  margin: 40px 0;
+}
 
+/* Riga con numero clienti + box loghi */
 .clienti-box{
   width: 100%;
   padding: 50px 0;
 }
 
+/* Larghezza colonne impostate su lato html con w40 e w60 */
+
 /* Seleziona colonna di sinistra */
 .clienti-box .colonna:first-child{
-  /* width: 40%; */
   padding-left: 5%;
   padding-right: 20%;
   text-align: left;
 }
-
+/* Seleziona colonna di sinistra, paragrafo */
 .clienti-box .colonna:first-child p{
   margin-top: 20px;
 }
 
-
-/* Seleziona colonna di destra */
-.clienti-box .colonna:nth-child(2){
-  /* width: 60%; */
-  /* background-color: pink; */
-}
-
-
-
-
+/* Box con tutti i loghi */
 .clienti-brand{
   width: 100%;
   align-content: center;
-
 }
-
 .clienti-brand .cella-cliente img{
   max-height: 50px;
   max-width: 100%;
-
 }
 
+/* Logo singolo */
 .cella-cliente{
   width: 25%;
   height: 50px;
@@ -554,26 +566,24 @@
   line-height: 50px;
 }
 
-/* Centrature manuali */
+/* Centrature manuale immagine*/
 .clienti-box .cella-cliente:nth-child(6){
   position: relative;
   top: 5px;
 }
 
+/* Centrature manuale immagine*/
 .clienti-box .cella-cliente:nth-child(8){
   position: relative;
   top: 4px;
 }
-/* /Centrature manuali */
 
-.background3 .content p{
-  margin: 40px 0;
-}
-
+/* Contenitore foto profilo con donna */
 .foto-profilo {
   text-align: right;
 }
 
+/* Foto profilo donna */
 .foto-profilo img{
   position: relative; /* Sfalsato rispetto al contenuto a sinistra */
   bottom: 50px;
@@ -581,15 +591,15 @@
 }
 
 
-
+/* Riga con sfondo blu*/
 .background4{
   padding: 40px 0;
   background-color: #32495b; /*blu*/
 }
 
+/* FOOTER-LISTE PERSONALIZZAZIONE */
 .footer-liste{
   width: 100%;
-
 }
 
 .footer-liste ul{
@@ -624,7 +634,9 @@
 .footer-liste ul li i{
   padding-right: 25px;
 }
+/* /FOOTER-LISTE PERSONALIZZAZIONE */
 
+/* FOOTER LINGUE - Personalizzaione */
 .footer-lingue{
   width: 100%;
   text-align: center;
@@ -635,7 +647,9 @@
 .footer-lingue ul{
   padding: 20px 0;
 }
+/* /FOOTER LINGUE - Personalizzaione */
 
+/* Footer-credits */
 .footer-credits{
   width: 100%;
   padding: 40px 0;
@@ -644,13 +658,14 @@
 
 /* Note */
 
-/* Codice per far apparire barra grigia dopo POPOLAR FEATURE */
+/* Modo "elegante" per far apparire barra grigia dopo POPOLAR FEATURE */
 /* .info-features {
     width: 100%;
     font-size: 18px; */
     /* line-height per centrare in altezza */
     /* line-height: 20px; */
 /* } */
+
 /* .info-features:before {
     content: '';
     display: block;
@@ -661,7 +676,3 @@
     /* margin-top: 9px;
     background-color: #899397;
 } */
-
-/* trattino lungo = long dash */
-/* trattino lungo = &mdash;
- */
