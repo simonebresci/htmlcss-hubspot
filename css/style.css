@@ -32,8 +32,17 @@
 .w25{
   width: 25%;
 }
+
+.w40{
+  width: 40%;
+}
+
 .w50{
   width: 50%;
+}
+
+.w60{
+  width: 60%;
 }
 .w100{
   width: 100%;
@@ -51,6 +60,16 @@
 /* Allinea testo a destra */
 .txt-right{
   text-align: right;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.evidenzia{
+  font-size: 36px;
+  font-weight: bold;
+  color: black; /* grigino scuro*/
 }
 
 /* Rendi un elemento di tipo display block */
@@ -450,15 +469,25 @@
 
 /* Seleziona colonna di sinistra */
 .clienti-box .colonna:first-child{
-  width: 40%;
-  background-color: green;
+  /* width: 40%; */
+  padding-left: 5%;
+  padding-right: 20%;
+  text-align: left;
 }
+
+.clienti-box .colonna:first-child p{
+  margin-top: 20px;
+}
+
 
 /* Seleziona colonna di destra */
 .clienti-box .colonna:nth-child(2){
-  width: 60%;
+  /* width: 60%; */
   background-color: pink;
 }
+
+
+
 
 .clienti-brand{
   width: 800px;
@@ -467,7 +496,7 @@
 
 .clienti-brand .cella-cliente img{
   max-height: 50px;
-  max-width: 100px;
+  max-width: 80%;
 }
 
 .cella-cliente{
@@ -476,6 +505,21 @@
   text-align: center;
   border: 1px solid violet;
 }
+
+.background3 .content p{
+  margin: 40px 0;
+}
+
+.foto-profilo {
+  text-align: right;
+}
+
+.foto-profilo img{
+  position: relative; /* Sfalsato rispetto al contenuto a sinistra */
+  bottom: 50px;
+  max-height: 400px;
+}
+
 
 
 .background4{
