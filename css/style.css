@@ -309,8 +309,8 @@
   text-align: center;
 }
 
-.main-cubo h2{
-  font-size: 36px;
+.content h1{
+  font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -377,6 +377,10 @@
   padding-bottom: 40px;
 }
 
+.cl-contenuto h2{
+  margin-top:20px;
+}
+
 .cl-contenuto p{
   padding-bottom: 50px;
   border-bottom: 2px solid #899397;
@@ -387,7 +391,7 @@
   list-style: none;
   text-decoration: none;
   text-align: left;
-  margin-bottom:50px;
+  margin-bottom:70px;
 }
 
 
@@ -395,6 +399,8 @@
   width:100%;
   /* Sfondo con gradient */
   background: linear-gradient(45deg,#00a4bd,#00bda5);
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 .main-statistics{
@@ -458,6 +464,11 @@
   border-bottom:0px;
 }
 
+.main-statistics .riquadri .rettangolo span{
+  font-size: 14px;
+  margin: 5px 0;
+}
+
 .main-statistics .riquadri .rettangolo .count{
   display:block;
   font-size: 36px;
@@ -465,8 +476,14 @@
 /* /Rendere più semplice */
 
 .count:after{
+  /* Centratura manuale */
+  position: relative;
+  bottom: 4px;
+  /* /Centratura manuale */
+
   content:" +";
-  font-size: 0.5em;
+  font-size: 0.7em;
+  font-weight: bold;
 }
 
 .background3{
