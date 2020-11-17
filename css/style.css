@@ -152,6 +152,12 @@
   background-color: white;
 }
 
+.border-white{
+  border: 1px solid white;
+  color: black;
+  background-color: white;
+}
+
 .filled-main-color{
   border: 1px solid #fe775a;
   background-color: #fe775a;
@@ -523,11 +529,13 @@
 
 
 .background4{
-  background-color: #32495b;
+  padding: 40px 0;
+  background-color: #32495b; /*blu*/
 }
 
 .footer-liste{
   width: 100%;
+
 }
 
 .footer-liste ul{
@@ -542,23 +550,42 @@
 
 .footer-liste ul li{
   display: block;
+  margin-bottom: 10px;
+}
+
+/* Workaround */
+.footer-liste ul li:nth-child(7){
+  margin: 20px 0;
+}
+
+.footer-liste ul li:nth-child(7) a{
+  color: #32495b; /*Trasparente*/
+}
+
+.footer-liste ul li:nth-child(7) a:hover{
+  color: white; /*Trasparente*/
+}
+/* /workaround */
+
+.footer-liste ul li i{
+  padding-right: 25px;
 }
 
 .footer-lingue{
   width: 100%;
-  margin: 0 auto;
   text-align: center;
   color: white;
   border-bottom: 1px solid white;
 }
 
-.footer-credits{
-  width: 100%;
-  color: white;
+.footer-lingue ul{
+  padding: 20px 0;
 }
 
-.footer-credits span{
-  border: 1px solid violet;
+.footer-credits{
+  width: 100%;
+  padding: 40px 0;
+  color: white;
 }
 
 /* Note */
